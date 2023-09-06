@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   currentIndex = 0;
   images: string[] = [
-    '../../../assets/images/fashion.jpg',
-    '../../../assets/images/fashion1.webp',
-    '../../../assets/images/fashion2.jpg'
+    'assets/images/fashion.jpg',
+    'assets/images/fashion1.webp',
+    'assets/images/fashion2.jpg'
   ];
   currentSlide!: string;
 
