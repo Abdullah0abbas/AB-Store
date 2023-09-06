@@ -1,6 +1,6 @@
 .content {
     width: 100%;
-    height: 69vh;
+    height: calc(100vh - 100px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
