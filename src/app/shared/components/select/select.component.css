@@ -1,0 +1,21 @@
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul span{
+    margin: 1rem;
+    --tw-text-opacity: 1;
+    color: rgb(252 231 243 / var(--tw-text-opacity));
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.ul span:hover{
+    color: red;
+    scale: 1.1;
+    border-bottom: 1px solid red;
+    padding: 0px;
+}

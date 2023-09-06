@@ -1,0 +1,188 @@
+.container-fluid{
+    height: 100%;
+    overflow: hidden;
+}
+
+.content{
+    height: 100%;
+    overflow: hidden;
+}
+
+.empty{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    margin: 250px auto;
+    width: 350px;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+    position: sticky;
+    top: 50%;
+}
+
+.empty p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty span{
+    background-color: rgb(131, 4, 4);
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.empty span i{
+    font-size: 30px;
+}
+
+.rightX{
+    font-size: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cartBox {
+    border: 1px solid var(--main-color);
+    box-shadow: 1px 4px 4px 1px;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 0 0;
+    height: 82vh;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+table{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.table .quantity {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.quantity input {
+    margin: 0 20px;
+    color: white;
+}
+
+.table tbody {
+    border-top: 1px solid #c61d21;
+    border-bottom: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+tbody tr td {
+    border-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--main-color);
+    color: white;
+}
+th{
+    background-color:var(--main-color);
+    color: white;
+}
+
+tbody tr td img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+tbody input {
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.headCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.headCart span {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #c61d21;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.lead{
+    color: white;
+}
+
+.headCart span:hover {
+    scale: 1.1;
+}
+
+.btn{
+    background-color: #c61d21;
+    border: none;
+    transition: 0.3s;
+}
+.btn:hover{
+    scale: 1.1;
+}
+
+.alert{
+    margin: 20px auto;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+strong{
+    color: red;
+}
+
+@media (max-width:991px) {
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+        text-align: center;
+        background-color: var(--main-color);
+    }
+    .cartBox{
+        height:87vh;
+        overflow: hidden;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+    }
+    .headCart{
+        display: flex;
+        flex-direction: column;
+    }
+    .table thead th{
+        display: none;
+    }
+    .table tbody{
+        border: none;
+    }
+    .delete{
+        display: none;
+    }
+    tfoot th{
+        width: 10%;
+    }
+    .table tbody button{
+        background-color: var(--main-color);
+    }
+    
+}

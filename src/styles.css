@@ -1,0 +1,27 @@
+* {
+    --main-color: rgb(31 41 55 / var(--tw-bg-opacity));;
+    --tw-bg-opacity: 1;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.content {
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  position: relative;
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  
+  /* Target the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background: red; /* Color of the thumb */
+  }
+  
+  /* Target the scrollbar track on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red; /* Color of the thumb on hover */
+  }

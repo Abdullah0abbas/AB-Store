@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="content">
+    <div class="left">
+        <h1>Find best and latest styles here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam architecto et consequuntur maxime velit ipsum!</p>
+
+        <div>
+            <button routerLink="/products" class="btn-success">Shopping Now</button>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="slider w-100">
+            <img [src]="currentSlide" alt="Current Slide w-100">
+            <div class="slider-indicators">
+              <span class="indicator" [ngClass]="{ active: currentIndex === 0 }"></span>
+              <span class="indicator" [ngClass]="{ active: currentIndex === 1 }"></span>
+              <span class="indicator" [ngClass]="{ active: currentIndex === 2 }"></span>
+            </div>
+          </div>
+    </div>
+</div>

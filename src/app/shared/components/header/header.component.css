@@ -1,0 +1,166 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+   
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.left div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.left div h1 {
+    font-size: 25px
+}
+
+h1 span {
+    color: red;
+}
+
+.left i {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 10px;
+    color: rgb(240, 64, 64);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 15px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.active {
+    color: red;
+}
+
+li:hover {
+    scale: 1.1;
+    color: red;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.right i {
+    margin: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right i:hover {
+    scale: 1.1;
+    color: red;
+}
+
+hr {
+    color: white;
+}
+
+.basket {
+    position: relative;
+}
+
+.basket i {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.flash {
+    position: absolute;
+    bottom: -2px;
+    left: -10px;
+    color: red;
+}
+
+
+
+.toggle-menu {
+    width: 30px;
+    height: 10px;
+    background: none;
+    display: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-menu:focus {
+    outline: none;
+}
+
+.toggle-menu span {
+    display: block;
+    background-color: #fff;
+    height: 1px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+@media (max-width:767px) {
+  .menu{
+    display: none;
+  }
+  .toggle-menu{
+    display: block;
+  }
+  .menu.open{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    color: white;
+    position: absolute;
+    top: 29px;
+    right: 0px;
+    width: 100%;
+    align-items: flex-start;
+    z-index: 1;
+
+  }
+  ul.open{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+  ul::after{
+    content: "";
+    background-color: white;
+    color: white;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

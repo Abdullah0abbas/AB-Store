@@ -1,0 +1,29 @@
+<div class="content">
+    <div class="left">
+        <div>
+            <span><i class='bx bxs-shopping-bag-alt'></i></span>
+            <h1>A.B<span> Store</span></h1>
+        </div>
+        <nav [ngClass]="{'open': isOpen}" class="menu">
+            <ul [ngClass]="{'open': isOpen}" class="menu">
+                <li routerLinkActive="active" routerLink="/home">Home</li>
+                <li routerLinkActive="active" routerLink="/products">Products</li>
+                <li routerLinkActive="active" routerLink="/contact">Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="right">
+        <button (click)="toggleMenu()" class="toggle-menu">
+           <div>
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
+        </button>
+        <i class='bx bx-search'></i>
+        <i routerLinkActive="active" class='basket bx bx-basket' routerLink="/cart"><i *ngIf="cartNotEmpty"
+                class='flash bx bx-wifi-0 bx-flashing'></i></i>
+    </div>
+</div>
+<hr>

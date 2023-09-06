@@ -1,0 +1,19 @@
+<div class="item mb-5">
+    <div >
+        <img class="img" src="{{data.image}}" alt="">
+        <h5>{{data.category}}</h5>
+        <div class="body">
+            <h4>{{data.title}}</h4>
+            <h3>${{data.price}}</h3>
+        </div>
+    </div>
+    <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+        <button class="btn btn-success" *ngIf="!addButton" (click)="addButton = true">Add To Cart</button>
+        <div class="d-flex w-50" *ngIf="addButton">
+            <input type="number" class="form-control" [(ngModel)]="amount">
+            <button class="btn btn-danger" (click)="add();addButton=false">Add</button>
+            
+        </div>
+        <button class="btn-eye" routerLink="/details/{{data.id}}"><img class="eye" src="../../../../assets/images/eye.svg" alt=""></button>
+    </div>
+</div>

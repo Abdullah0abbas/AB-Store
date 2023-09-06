@@ -1,0 +1,52 @@
+<app-header></app-header>
+<div class="box">
+
+    <i class='arrow bx bx-left-arrow-alt bx-fade-right' routerLink="/products" ></i>
+    <div class="row" *ngIf="!loading">
+
+        <div class="col-md-7 col-sm-12">
+            <div class="info">
+                <ul class="list-unstyled">
+                    <li class="title">{{data.title}}</li>
+                    <div class="div">
+                        <li class="price">${{data.price}}</li>
+                        <div class="rating">
+                            <img class="star" src="assets/images/star.svg" *ngFor="let number of stars" />
+                            <img class="star" src="assets/images/star-no-fill.svg" *ngFor="let number of emptyStars" />
+
+                            <div class="ms-3">
+                                {{ productRating }}.0/ 5.0
+                                <span>({{ data.rating.count }})</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li class="category">{{data.category}}</li>
+
+                    <li class="description">{{data.description}}</li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img class="image" src="{{data.image}}" alt="">
+        </div>
+
+        
+
+        <div class="pt-4">
+            Free 2-5 day shipping • Tool-free assemply • 30-day trial
+        </div>
+        <div class="icons">
+            <i class="bx bxl-facebook-square"></i>
+            <i class="bx bxl-instagram-alt "></i>
+            <i class="bx bxl-twitter "></i>
+            <i class="bx bxl-pinterest"></i>
+        </div>
+    </div>
+<div class="text-center">
+    <app-spinner *ngIf="loading"></app-spinner>
+</div>
+
+</div>

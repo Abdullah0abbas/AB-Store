@@ -1,0 +1,4 @@
+<div class="ul">
+    <span class="category" (click)="detectChanges($event)">All</span>
+    <span class="category" *ngFor="let option of data" (click)="detectChanges($event)">{{ option | titlecase }}</span>
+</div>
