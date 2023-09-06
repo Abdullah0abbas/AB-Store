@@ -1,5 +1,5 @@
 <div class="item mb-5">
-    <div >
+    <div>
         <img class="img" src="{{data.image}}" alt="">
         <h5>{{data.category}}</h5>
         <div class="body">
@@ -12,8 +12,9 @@
         <div class="d-flex w-50" *ngIf="addButton">
             <input type="number" class="form-control" [(ngModel)]="amount">
             <button class="btn btn-danger" (click)="add();addButton=false">Add</button>
-            
+
         </div>
-        <button class="btn-eye" routerLink="/details/{{data.id}}"><img class="eye" src="assets/images/eye.svg" alt="details"></button>
+        <button class="btn-eye" routerLink="/details/{{data.id}}">
+            <img class="eye" src="./assets/images/eye.svg" alt="details"></button>
     </div>
 </div>
