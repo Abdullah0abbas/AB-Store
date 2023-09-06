@@ -106,12 +106,13 @@ hr {
 
 
 .toggle-menu {
-    width: 30px;
+    width: 20px;
     height: 10px;
     background: none;
     display: none;
     border: none;
     cursor: pointer;
+    margin: 1rem;
 }
 
 .toggle-menu:focus {
