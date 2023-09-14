@@ -93,10 +93,23 @@
         height: 200px;
         margin: 0 auto;
     }
+    .right{
+        margin: 0 auto;
+    }
+    .left{
+        margin: 0 auto;
+    }
 
     .left button {
         margin: 0 auto;
     }
+}
 
-
+@media (max-width:540px) {
+    .right img{
+        width:90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
 }

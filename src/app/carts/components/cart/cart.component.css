@@ -175,14 +175,31 @@ strong{
     .table tbody{
         border: none;
     }
-    .delete{
-        display: none;
-    }
     tfoot th{
         width: 10%;
     }
-    .table tbody button{
-        background-color: var(--main-color);
-    }
     
+    
+}
+
+@media (max-width:700px){
+   .cartBox{
+    width: 90%;
+    overflow: auto;
+    margin: 0 auto;
+   }
+   table tr{
+    display: flex;
+    flex-direction: column;
+   }
+   tfoot th:not(.order){
+    display: none;
+   }
+   .order{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+   }
 }
