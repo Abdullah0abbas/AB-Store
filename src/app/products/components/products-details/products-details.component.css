@@ -95,3 +95,9 @@ ul li {
     }
 
 }
+
+.spinner{
+    overflow: hidden;
+    height: 100%;
+    margin: 150px auto;
+}

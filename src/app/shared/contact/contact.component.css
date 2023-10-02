@@ -132,3 +132,13 @@ textarea{
     }
     
 }
+
+@media (max-width:385px) {
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1rem;
+    }
+}

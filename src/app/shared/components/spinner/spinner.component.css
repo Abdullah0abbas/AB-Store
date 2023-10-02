@@ -6,6 +6,7 @@
   color: red;
   position: relative;
   margin: 150px auto;
+  overflow: hidden;
 }
 .loader::before {
   content: '';  

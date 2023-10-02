@@ -14,7 +14,7 @@
     </div>
 
     <div class="right">
-        <button (click)="toggleMenu()" class="toggle-menu">
+        <button (click)="toggleMenu()" class="toggle-menu" [class.active-button]="isOpen">
            <div>
             <span></span>
             <span></span>

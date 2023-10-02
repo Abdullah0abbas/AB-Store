@@ -114,6 +114,9 @@ hr {
     cursor: pointer;
     margin: 1rem;
 }
+.toggle-menu:hover span{ 
+    background-color: red;
+}
 
 .toggle-menu:focus {
     outline: none;
@@ -125,6 +128,9 @@ hr {
     height: 1px;
     border-radius: 4px;
     margin-bottom: 4px;
+}
+.active-button span{
+    background-color: red;
 }
 
 @media (max-width:767px) {
@@ -174,5 +180,12 @@ hr {
     }
     .left{
         margin-right: 80px;
+    }
+    .left div h1{
+        font-size: 20px;
+        display: flex;
+    }
+    .left div h1 span{
+        margin-left: 5px;
     }
 }
